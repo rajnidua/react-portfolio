@@ -25,13 +25,7 @@ git push -u origin main
 
 ```md
 npx create-react-app react-portfolio
-```
-
-In Github
-
-```md
-create an empty repository
-In the terminal, go to the folder which contains react app that you just created
+npm i bootstrap dotenv axios --save
 ```
 
 # Getting Started with Create React App
