@@ -1,3 +1,39 @@
+# Setting up react app in github
+
+```md
+In the Github :
+create a new repository named `react-portfolio`.
+
+In your local machine :
+Open the terminal and create a folder named `portfolio` using `mkdir`.
+Go into this newly created folder `portfolio` in terminal and run the command :`npx create-react-app react-portfolio` , this will create a react app inside the portfolio folder.
+run the command `git init`to initialize the repository.
+Now, go into the react folder that you just created `react-portfolio` in the terminal.
+
+In the Visual Studio Code,
+Open the same react project folder `reaact-portfolio`.
+Make some change to the README.md (to make your first commit)
+go back to the terminal where you left and run the commands :
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/rajnidua{change it to your user name}/react-portfolio.git
+git push -u origin main
+```
+
+# Installations
+
+```md
+npx create-react-app react-portfolio
+```
+
+In Github
+
+```md
+create an empty repository
+In the terminal, go to the folder which contains react app that you just created
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
