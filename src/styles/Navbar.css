@@ -1,0 +1,31 @@
+.navbar .max-width {
+  max-width: 1300px;
+  margin: auto;
+}
+
+.navbar {
+  width: 100%;
+  border: 2px solid black;
+  position: fixed;
+}
+
+.navbar .menu li {
+  border: 2px solid red;
+  list-style-type: none;
+  display: inline-block;
+}
+
+.navbar .max-width {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid pink;
+}
+
+.navbar .menu li a {
+  display: block;
+
+  transition: color 0.3s ease;
+  margin-left: 15px;
+}

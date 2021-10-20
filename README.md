@@ -26,6 +26,22 @@ git push -u origin main
 ```md
 npx create-react-app react-portfolio
 npm i bootstrap dotenv axios --save
+To use CSS-in-JS, install the styles component
+npm install styled-components --save
+
+For font awesome icons:
+Install:
+
+npm install --save @fortawesome/fontawesome-svg-core
+npm install --save @fortawesome/free-solid-svg-icons
+npm install --save @fortawesome/react-fontawesome
+Import:
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+Use:
+
+<FontAwesomeIcon icon={faBars} />
 ```
 
 # Getting Started with Create React App
