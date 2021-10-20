@@ -1,0 +1,16 @@
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  color: yellow;
+  padding: 0 100px 0 100px;
+  height: 100vh;
+  min-height: 500px;
+  background-color: slategray;
+}
+
+.typing {
+  color: red;
+}

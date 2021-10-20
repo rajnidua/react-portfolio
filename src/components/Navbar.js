@@ -36,7 +36,6 @@ function Navbar() {
       <div className="menu-btn">
         <FontAwesomeIcon icon={faBars} />
       </div>
-      {/* </div> */}
     </nav>
   );
 }
