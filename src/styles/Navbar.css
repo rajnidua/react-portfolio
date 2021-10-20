@@ -1,31 +1,97 @@
-.navbar .max-width {
-  max-width: 1300px;
-  margin: auto;
+@import url("https://fonts.googleapis.com/css2?family=Rampart+One&family=Roboto:wght@300&display=swap");
+
+/* navbar styling */
+.navbar {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 15px 6% 15px 25px;
+  z-index: 999;
+
+  font-family: "Rampart One", sans-serif;
+  transition: all 0.3s ease;
+  background-color: slategray;
 }
 
-.navbar {
-  width: 100%;
-  border: 2px solid black;
-  position: fixed;
+.navbar.sticky {
+  padding: 15px 0;
+  background: yellow;
+}
+
+.navbar .menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.navbar .logo a {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.navbar .logo a span {
+  color: yellow;
+  transition: all 0.3s ease;
+}
+
+.navbar.sticky .logo a span {
+  color: #fff;
 }
 
 .navbar .menu li {
-  border: 2px solid red;
-  list-style-type: none;
-  display: inline-block;
-}
-
-.navbar .max-width {
-  display: flex;
-
-  align-items: center;
-  justify-content: space-between;
-  border: 2px solid pink;
+  list-style: none;
 }
 
 .navbar .menu li a {
   display: block;
-
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  margin-left: 25px;
   transition: color 0.3s ease;
-  margin-left: 15px;
+}
+
+.navbar .menu li a:hover {
+  color: yellow;
+}
+
+.navbar.sticky .menu li a:hover {
+  color: #fff;
+}
+
+/* menu button styling */
+.menu-btn {
+  display: none;
+}
+
+@media screen and (max-width: 980px) {
+  .navbar {
+    padding: 0 0 10px 15px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .navbar .logo a {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+
+  .navbar .menu {
+    display: none;
+  }
+
+  .navbar .menu-btn {
+    justify-content: center;
+    display: block;
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+    padding: 0 20px 0px 0px;
+  }
 }
