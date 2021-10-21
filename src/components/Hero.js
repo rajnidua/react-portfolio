@@ -16,7 +16,7 @@ function Hero() {
   return (
     <section className="hero">
       <div className="left-section">
-        <img src={profilePic} alt="profile pic"></img>
+        <img className="img-class" src={profilePic} alt="profile pic"></img>
       </div>
       <div className="right-section">
         <div className="name">
