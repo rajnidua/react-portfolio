@@ -15,20 +15,30 @@ function Hero() {
   const [words, setWords] = useState(["Developer", "Programmer."]);
   return (
     <section className="hero">
-      <div className="right-section">
+      <div className="left-section">
         <img src={profilePic} alt="profile pic"></img>
       </div>
-      <div className="left-section">
-        <div>
+      <div className="right-section">
+        <div className="name">
           <h1>RAJNI DUA</h1>
         </div>
-        <div>FRONT END DEVELOPER.BACK END DEVELOPER</div>
-
-        <div className="typing">
-          <Typing />
+        <div className="text-under-name">
+          <span className="diff-font">FRONT</span> END DEVELOPER{" "}
+          <span className="diff-font diff-font-color">|</span>
+          <span className="diff-font"> BACK</span> END DEVELOPER
         </div>
 
-        <a href="mailto:rajni.dua14@gmail.com?subject=REGARDING WORK">
+        <div className="typing-block">
+          {/* <div>MY SKILLS:</div> */}
+          <div className="typing">
+            <Typing />
+          </div>
+        </div>
+
+        <a
+          className="touch"
+          href="mailto:rajni.dua14@gmail.com?subject=REGARDING WORK"
+        >
           GET IN TOUCH
         </a>
       </div>
