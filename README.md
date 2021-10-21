@@ -42,6 +42,9 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 Use:
 
 <FontAwesomeIcon icon={faBars} />
+
+For Typing :
+npm install react-typist --save
 ```
 
 # Getting Started with Create React App
