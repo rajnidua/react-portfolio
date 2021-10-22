@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "../styles/Hero.css";
-import profilePic from "../images/profile_pic.jpg";
+import "../../styles/Hero.css";
+import profilePic from "../../images/profile_pic.jpg";
 import Typing from "./Typing";
 import GetInTouch from "./GetInTouch";
 

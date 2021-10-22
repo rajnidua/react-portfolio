@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import "../styles/Projects.css";
-import EmployeeTrackingSystem1 from "../images/EmployeeTrackingSystem1.png";
-import PlantPersonalAssistant from "../images/PlantPersonalAssistant.png";
-import TheTechBlog from "../images/TheTechBlog.png";
-import weatherDashboard from "../images/weather_dashboard.jpeg";
+import "../../styles/Projects.css";
+import EmployeeTrackingSystem1 from "../../images/EmployeeTrackingSystem1.png";
+import PlantPersonalAssistant from "../../images/PlantPersonalAssistant.png";
+import TheTechBlog from "../../images/TheTechBlog.png";
+import weatherDashboard from "../../images/weather_dashboard.jpeg";
 
 function Projects() {
   return (
