@@ -19,8 +19,12 @@ function Projects() {
             </div>
             <div className="brief-description">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam dolorem illum iste magnam, esse voluptas!
+                A command-line application to manage a company's employee
+                database. This application uses Node.js, Inquirer, and MySQL2.
+                Database Name in db : ets (EMPLOYEE TRACKING SYSTEM).User has
+                the option to view, add and delete employees, Roles and
+                Departments.User can also check the total utilized budget per
+                department.
               </p>
             </div>
           </div>
@@ -50,8 +54,12 @@ function Projects() {
             </div>
             <div className="brief-description">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam dolorem illum iste magnam, esse voluptas!
+                A CMS-style blog site similar to a Wordpress site, where
+                developers can publish their blog posts and comment on other
+                developers’ posts as well. This app follows the MVC paradigm in
+                its architectural structure, using Handlebars.js as the
+                templating language, Sequelize as the ORM, and the
+                express-session npm package for authentication.
               </p>
             </div>
           </div>
@@ -81,8 +89,14 @@ function Projects() {
             </div>
             <div className="brief-description">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam dolorem illum iste magnam, esse voluptas!
+                A full stack web application which looks after your plants by
+                letting you add your plant details and getting you the next
+                watering schedule date for your plant according to the watering
+                schedule that you entered.User can signup/login to the
+                application. This was a group project where I worked in a team
+                of three. I was responsible to develop the back-end , so I
+                developed all the get, put and post routes. And also all the
+                fetch functions in Js files.
               </p>
             </div>
           </div>
@@ -112,8 +126,12 @@ function Projects() {
             </div>
             <div className="brief-description">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam dolorem illum iste magnam, esse voluptas!
+                Dashboard for getting current and future weather conditions
+                according to the user selected city name. User also gets to see
+                the temperature in his/her selected units. Weather conditions
+                are shown using icon and UV index is displayed by using
+                different colors describing the severity of the UV. This project
+                uses Openweather Map API and fetch javascript function.
               </p>
             </div>
           </div>

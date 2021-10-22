@@ -13,20 +13,30 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 
+import Rajni_Resume from "../../images/Rajni_Resume.pdf";
+
 export default function Footer() {
   return (
     <footer className="footer">
       <div className="icon-display">
-        <FontAwesomeIcon icon={faLinkedin} />
+        <a href="https://www.linkedin.com/in/rajnidua/">
+          <FontAwesomeIcon icon={faLinkedin} />
+        </a>
       </div>
       <div className="icon-display">
-        <FontAwesomeIcon icon={faGithub} />
+        <a href="https://github.com/rajnidua">
+          <FontAwesomeIcon icon={faGithub} />
+        </a>
       </div>
       <div className="icon-display">
-        <FontAwesomeIcon icon={faEnvelope} />
+        <a href="mailto:rajni.dua14@gmail.com?subject=REGARDING WORK">
+          <FontAwesomeIcon icon={faEnvelope} />
+        </a>
       </div>
       <div className="icon-display">
-        <FontAwesomeIcon icon={faFilePdf} />
+        <a href={Rajni_Resume} download>
+          <FontAwesomeIcon icon={faFilePdf} />
+        </a>
       </div>
     </footer>
   );
