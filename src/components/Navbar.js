@@ -10,9 +10,7 @@ function Navbar({ currentPage, handlePageChange }) {
     <nav className="navbar">
       {/* <div className="max-width"> */}
       <div className="logo">
-        <a href="https://github.com/rajnidua">
-          Ra<span>jni.</span>
-        </a>
+        <a href="https://github.com/rajnidua">R@j|\|;</a>
       </div>
 
       <ul className="menu">
