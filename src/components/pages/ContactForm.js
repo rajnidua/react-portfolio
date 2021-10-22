@@ -1,11 +1,17 @@
 import React, { useState } from "react";
 import "../../styles/ContactForm.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faEnvelope,
+  faMapMarkerAlt,
+  faUser,
+} from "@fortawesome/free-solid-svg-icons";
 
 function ContactForm() {
   // Here we set two state variables for firstName and lastName using `useState`
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
-  const [email, setEmai] = useState("");
+  const [email, setEmail] = useState("");
   const [subject, setSugject] = useState("");
   const [message, setMessage] = useState("");
 
@@ -30,7 +36,7 @@ function ContactForm() {
   return (
     <section className="contact" id="contact">
       <div className="max-width">
-        <h2 className="title">Contact me</h2>
+        {/* <div className="title">Contact me</div> */}
         <div className="contact-content">
           <div className="column left">
             <div className="text">Get in Touch</div>
@@ -40,7 +46,10 @@ function ContactForm() {
             </p>
             <div className="icons">
               <div className="row">
-                <i className="fas fa-user"></i>
+                {/* <i className="fas fa-user"></i> */}
+                <div className="icon-display">
+                  <FontAwesomeIcon icon={faUser} />
+                </div>
                 <div className="info">
                   <div className="head">Name</div>
                   <div className="sub-title">Rajni Dua</div>
@@ -48,7 +57,10 @@ function ContactForm() {
               </div>
 
               <div className="row">
-                <i className="fas fa-map-marker-alt"></i>
+                {/* <i className="fas fa-map-marker-alt"></i> */}
+                <div className="icon-display">
+                  <FontAwesomeIcon icon={faMapMarkerAlt} />
+                </div>
                 <div className="info">
                   <div className="head">Address</div>
                   <div className="sub-title">South Australia, Australia</div>
@@ -56,7 +68,10 @@ function ContactForm() {
               </div>
 
               <div className="row">
-                <i className="fas fa-envelope"></i>
+                {/* <i className="fas fa-envelope"></i> */}
+                <div className="icon-display">
+                  <FontAwesomeIcon icon={faEnvelope} />
+                </div>
                 <div className="info">
                   <div className="head">Email</div>
                   <div className="sub-title">rajni.dua14@gmail.com</div>
@@ -75,7 +90,7 @@ function ContactForm() {
                     name="firstName"
                     onChange={handleInputChange}
                     type="text"
-                    placeholder="Last Name"
+                    placeholder="First Name"
                   />
                 </div>
 
@@ -89,11 +104,12 @@ function ContactForm() {
                     placeholder="Last Name"
                   />
                 </div>
-
-                <div className="field Email">
-                  <input type="text" placeholder="Email" required />
-                </div>
               </div>
+
+              <div className="field Email">
+                <input type="text" placeholder="Email" required />
+              </div>
+
               <div className="field">
                 <input type="text" placeholder="Subject" required />
               </div>
@@ -119,27 +135,4 @@ function ContactForm() {
   );
 }
 
-{
-  /* <section classNameName="contactForm">
-<div classNameName="left-section">
-    <div classNameName="contactDescription"></div>
-</div>
-<div classNameName="right-section">
-    <div classNameName="formSection">
-        <form>
-          <input
-                    required
-                    value={firstName}
-                    name="firstName"
-                    onChange={handleInputChange}
-                    type="text"
-                    placeholder="Last Name"
-                  />  
-        </form>
-    </div>
-</div>
-
-
-</section> */
-}
 export default ContactForm;
