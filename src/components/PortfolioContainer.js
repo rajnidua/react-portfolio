@@ -23,9 +23,19 @@ export default function PortfolioContainer() {
       );
     }
     if (currentPage === "About") {
-      return <About />;
+      return (
+        <div>
+          <About />
+          <Footer />
+        </div>
+      );
     }
-    return <ContactForm />;
+    return (
+      <div>
+        <ContactForm />
+        <Footer />
+      </div>
+    );
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
