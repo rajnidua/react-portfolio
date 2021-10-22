@@ -34,9 +34,7 @@ function Navbar({ currentPage, handlePageChange }) {
             About
           </a>
         </li>
-        <li>
-          <a href="https://github.com/rajnidua">Skills</a>
-        </li>
+
         <li>
           <a
             href="#projects"
