@@ -30,12 +30,18 @@ function Projects() {
           </div>
           <div className="project-links">
             <div className="repo-link">
-              <a href="https://github.com/rajnidua" className="link-btn btn">
+              <a
+                href="https://github.com/rajnidua/Employee_Tracker"
+                className="link-btn btn"
+              >
                 Github Link
               </a>
             </div>
             <div className="site-link">
-              <a href="https://github.com/rajnidua" className="link-btn btn">
+              <a
+                href="https://drive.google.com/file/d/14zGVOiTEuxwe6KwTaHE8a6QNt5u8dFr9/view?usp=sharing"
+                className="link-btn btn"
+              >
                 Demo Video
               </a>
             </div>
@@ -65,13 +71,19 @@ function Projects() {
           </div>
           <div className="project-links">
             <div className="repo-link">
-              <a href="https://github.com/rajnidua" className="link-btn btn">
+              <a
+                href="https://github.com/rajnidua/The_Tech_Blog"
+                className="link-btn btn"
+              >
                 Github Link
               </a>
             </div>
             <div className="site-link">
-              <a href="https://github.com/rajnidua" className="link-btn btn">
-                Demo Video
+              <a
+                href="https://tech-blog-rajni.herokuapp.com"
+                className="link-btn btn"
+              >
+                Live App
               </a>
             </div>
           </div>
@@ -96,19 +108,25 @@ function Projects() {
                 application. This was a group project where I worked in a team
                 of three. I was responsible to develop the back-end , so I
                 developed all the get, put and post routes. And also all the
-                fetch functions in Js files.
+                fetch functions in Js files.This app is deployed in Heroku
               </p>
             </div>
           </div>
           <div className="project-links">
             <div className="repo-link">
-              <a href="https://github.com/rajnidua" className="link-btn btn">
+              <a
+                href="https://github.com/rajnidua/plant-personal-assistant"
+                className="link-btn btn"
+              >
                 Github Link
               </a>
             </div>
             <div className="site-link">
-              <a href="https://github.com/rajnidua" className="link-btn btn">
-                Demo Video
+              <a
+                href="https://project-2-your-plant-house.herokuapp.com"
+                className="link-btn btn"
+              >
+                Live App
               </a>
             </div>
           </div>
@@ -137,13 +155,19 @@ function Projects() {
           </div>
           <div className="project-links">
             <div className="repo-link">
-              <a href="https://github.com/rajnidua" className="link-btn btn">
+              <a
+                href="https://github.com/rajnidua/weather-dashboard"
+                className="link-btn btn"
+              >
                 Github Link
               </a>
             </div>
             <div className="site-link">
-              <a href="https://github.com/rajnidua" className="link-btn btn">
-                Demo Video
+              <a
+                href=" https://rajnidua.github.io/weather-dashboard/"
+                className="link-btn btn"
+              >
+                Live App
               </a>
             </div>
           </div>
