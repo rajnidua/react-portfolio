@@ -4,6 +4,24 @@ import EmployeeTrackingSystem1 from "../../images/EmployeeTrackingSystem1.png";
 import PlantPersonalAssistant from "../../images/PlantPersonalAssistant.png";
 import TheTechBlog from "../../images/TheTechBlog.png";
 import weatherDashboard from "../../images/weather_dashboard.jpeg";
+import { createTheme, ThemeProvider, Button } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
+
+const theme = createTheme({
+  palette: {
+    type: "light",
+    primary: {
+      main: "#3f51b5",
+    },
+    secondary: {
+      main: "#f50057",
+    },
+    background: {
+      paper: "#ece8e8",
+      default: "#f7f4f4",
+    },
+  },
+});
 
 function Projects() {
   return (
@@ -29,22 +47,41 @@ function Projects() {
             </div>
           </div>
           <div className="project-links">
-            <div className="repo-link">
+            {/*       <div className="repo-link">
               <a
                 href="https://github.com/rajnidua/Employee_Tracker"
                 className="link-btn btn"
               >
                 Github Link
               </a>
+            </div> */}
+            <div className="repo-link">
+              <Button
+                href="https://github.com/rajnidua/Employee_Tracker"
+                color="primary"
+                variant="contained"
+              >
+                Github Link
+              </Button>
             </div>
             <div className="site-link">
+              <Button
+                href="https://drive.google.com/file/d/14zGVOiTEuxwe6KwTaHE8a6QNt5u8dFr9/view?usp=sharing"
+                color="primary"
+                variant="contained"
+              >
+                Demo Video
+              </Button>
+            </div>
+
+            {/* <div className="site-link">
               <a
                 href="https://drive.google.com/file/d/14zGVOiTEuxwe6KwTaHE8a6QNt5u8dFr9/view?usp=sharing"
                 className="link-btn btn"
               >
                 Demo Video
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

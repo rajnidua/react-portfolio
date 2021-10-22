@@ -54,6 +54,9 @@ npm i gh-pages
 
 For email:
 npm install validator
+
+For color
+npm install @material-ui/core
 ```
 
 # Getting Started with Create React App

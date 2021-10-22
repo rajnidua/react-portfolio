@@ -3,8 +3,43 @@ import "../../styles/Hero.css";
 import profilePic from "../../images/profile_pic.jpg";
 import Typing from "./Typing";
 import GetInTouch from "./GetInTouch";
+import { createTheme, ThemeProvider, Button } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
+
+const theme = createTheme({
+  palette: {
+    type: "light",
+    primary: {
+      main: "#3f51b5",
+    },
+    secondary: {
+      main: "#f50057",
+    },
+    background: {
+      paper: "#ece8e8",
+      default: "#f7f4f4",
+    },
+  },
+});
+
+/* const useStyles = makeStyles((theme) => ({
+  hero: {
+    backgroundColor: theme.palette.background.paper,
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space - between",
+    flexWrap: "wrap",
+    alignItems: "center",
+    margin: "auto",
+    color: "yellow",
+    padding: "0 100px 150px 100px",
+    height: "100vh",
+    minHeight: "500px",
+  },
+})); */
 
 function Hero() {
+  /* const classes = useStyles(); */
   const [buttonClick, setButtonClick] = useState(false);
 
   const showSkills = (e) => {
@@ -14,35 +49,45 @@ function Hero() {
 
   const [words, setWords] = useState(["Developer", "Programmer."]);
   return (
-    <section className="hero">
-      <div className="left-section">
-        <img className="img-class" src={profilePic} alt="profile pic"></img>
-      </div>
-      <div className="right-section">
-        <div className="name">
-          <h1>RAJNI DUA</h1>
+    <ThemeProvider theme={theme}>
+      <section className="hero">
+        <div className="left-section">
+          <img className="img-class" src={profilePic} alt="profile pic"></img>
         </div>
-        <div className="text-under-name">
-          <span className="diff-font">FRONT</span> END DEVELOPER{" "}
-          <span className="diff-font diff-font-color">|</span>
-          <span className="diff-font"> BACK</span> END DEVELOPER
-        </div>
-
-        <div className="typing-block">
-          {/* <div>MY SKILLS:</div> */}
-          <div className="typing">
-            <Typing />
+        <div className="right-section">
+          <div className="name">
+            <h1>RAJNI DUA</h1>
           </div>
-        </div>
+          <div className="text-under-name" variant="contained" color="primary">
+            <span className="diff-font">FRONT</span> END DEVELOPER{" "}
+            <span className="diff-font diff-font-color">|</span>
+            <span className="diff-font"> BACK</span> END DEVELOPER
+          </div>
 
-        <a
-          className="touch"
-          href="mailto:rajni.dua14@gmail.com?subject=REGARDING WORK"
-        >
-          GET IN TOUCH
-        </a>
-      </div>
-    </section>
+          <div className="typing-block">
+            {/* <div>MY SKILLS:</div> */}
+            <div className="typing">
+              <Typing />
+            </div>
+          </div>
+
+          {/*      <a
+            className="touch"
+            href="mailto:rajni.dua14@gmail.com?subject=REGARDING WORK"
+          >
+            GET IN TOUCH
+          </a> */}
+
+          <Button
+            href="mailto:rajni.dua14@gmail.com?subject=REGARDING WORK"
+            color="primary"
+            variant="contained"
+          >
+            GET IN TOUCH
+          </Button>
+        </div>
+      </section>
+    </ThemeProvider>
   );
 }
 
