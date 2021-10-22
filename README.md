@@ -48,6 +48,12 @@ Use:
 
 For Typing :
 npm install react-typist --save
+
+For gh pages :
+npm i gh-pages
+
+For email:
+npm install validator
 ```
 
 # Getting Started with Create React App

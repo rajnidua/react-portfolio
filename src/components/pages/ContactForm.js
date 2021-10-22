@@ -6,6 +6,7 @@ import {
   faMapMarkerAlt,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
+import validator from "validator";
 
 function ContactForm() {
   // Here we set two state variables for firstName and lastName using `useState`
@@ -14,6 +15,17 @@ function ContactForm() {
   const [email, setEmail] = useState("");
   const [subject, setSugject] = useState("");
   const [message, setMessage] = useState("");
+
+  const [emailError, setEmailError] = useState("");
+  const validateEmail = (e) => {
+    var email = e.target.value;
+
+    if (validator.isEmail(email)) {
+      setEmailError("Valid Email :)");
+    } else {
+      setEmailError("Enter valid Email!");
+    }
+  };
 
   const handleInputChange = (e) => {
     // Getting the value and name of the input which triggered the change
@@ -97,7 +109,7 @@ function ContactForm() {
                 <div className="field name">
                   <input
                     required
-                    value={firstName}
+                    value={lastName}
                     name="lastName"
                     onChange={handleInputChange}
                     type="text"
@@ -107,7 +119,17 @@ function ContactForm() {
               </div>
 
               <div className="field Email">
-                <input type="text" placeholder="Email" required />
+                <div>
+                  <input
+                    onChange={(e) => validateEmail(e)}
+                    type="text"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+                <div>
+                  <p>{emailError}</p>
+                </div>
               </div>
 
               <div className="field">
