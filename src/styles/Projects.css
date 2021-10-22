@@ -1,0 +1,87 @@
+/* project Cards Styling */
+
+.project-card-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 1400px;
+  min-height: 500px;
+  margin: auto;
+
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #fbe870;
+}
+
+.project-card-section .project-pic .project-img {
+  max-height: 500;
+  min-height: 500px;
+  width: 700px;
+}
+
+.project-card-section .project-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 500px;
+  max-height: 500px;
+
+  padding: 25px 0 25px 0;
+  width: 700px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.project-card-section .project-description .about-project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.project-description .about-project .brief-description {
+  padding-top: 25px;
+
+  font-size: 20px;
+}
+
+.project-card-section .project-description .project-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.project-description .project-links .repo-link {
+  margin-right: 50px;
+
+  font: bold 11px Arial;
+  text-decoration: none;
+  background-color: #eeeeee;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #cccccc;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #cccccc;
+}
+
+.project-description .project-links .site-link {
+  margin-left: 50px;
+
+  font: bold 11px Arial;
+  text-decoration: none;
+  background-color: #eeeeee;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #cccccc;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #cccccc;
+}

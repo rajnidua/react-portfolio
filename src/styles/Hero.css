@@ -29,7 +29,7 @@
 /* .hero .left-section {
 } */
 
-img {
+.hero .left-section .img-class {
   border-radius: 40%;
 }
 
