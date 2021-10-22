@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import Hero from "./pages/Hero";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
+import Footer from "./pages/Footer";
 import ContactForm from "./pages/ContactForm";
 
 export default function PortfolioContainer() {
@@ -14,7 +15,12 @@ export default function PortfolioContainer() {
       return <Hero />;
     }
     if (currentPage === "Projects") {
-      return <Projects />;
+      return (
+        <div>
+          <Projects />
+          <Footer />
+        </div>
+      );
     }
     if (currentPage === "About") {
       return <About />;
