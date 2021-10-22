@@ -3,8 +3,8 @@ import Navbar from "./Navbar";
 import Hero from "./pages/Hero";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
-/*import Contact from './pages/Contact';
- */
+import ContactForm from "./pages/ContactForm";
+
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState("Hero");
 
@@ -19,7 +19,7 @@ export default function PortfolioContainer() {
     if (currentPage === "About") {
       return <About />;
     }
-    /* return <Contact />; */
+    return <ContactForm />;
   };
 
   const handlePageChange = (page) => setCurrentPage(page);

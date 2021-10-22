@@ -27,7 +27,7 @@ function Navbar({ currentPage, handlePageChange }) {
         </li>
         <li>
           <a
-            href="#projects"
+            href="#about"
             onClick={() => handlePageChange("About")}
             className={currentPage === "About" ? "nav-link active" : "nav-link"}
           >
@@ -49,7 +49,15 @@ function Navbar({ currentPage, handlePageChange }) {
           </a>
         </li>
         <li>
-          <a href="https://github.com/rajnidua">Contact</a>
+          <a
+            href="#contactForm"
+            onClick={() => handlePageChange("ContactForm")}
+            className={
+              currentPage === "ContactForm" ? "nav-link active" : "nav-link"
+            }
+          >
+            Contact
+          </a>
         </li>
       </ul>
 
