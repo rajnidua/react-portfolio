@@ -1,5 +1,14 @@
 /* project Cards Styling */
 
+.projects {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fbe870;
+}
+
 .project-card-section {
   display: flex;
   flex-direction: row;
@@ -12,7 +21,8 @@
 
   margin-top: 50px;
   margin-bottom: 50px;
-  background-color: #fbe870;
+  background-color: lightgray;
+  border-radius: 20%;
 }
 
 .project-card-section .project-pic .project-img {
