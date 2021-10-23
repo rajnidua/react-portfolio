@@ -5,6 +5,7 @@ import Projects from "./pages/Projects";
 import About from "./pages/About";
 import Footer from "./pages/Footer";
 import ContactForm from "./pages/ContactForm";
+import projectsArray from "./pages/GetProjects";
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState("Hero");
@@ -17,7 +18,7 @@ export default function PortfolioContainer() {
     if (currentPage === "Projects") {
       return (
         <div>
-          <Projects />
+          <Projects projectsArray={projectsArray} />
           <Footer />
         </div>
       );
