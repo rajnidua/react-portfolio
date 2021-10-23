@@ -1,12 +1,18 @@
 import React from "react";
 import "../../styles/About.css";
+import profilePic from "../../images/profile_pic.jpg";
 
 export default function About() {
   return (
     <section className="about">
-      <div className="about-part">
-        I am a recent coding bootcamp graduate with a passion for developing
-        scalable web applications and working across the full stack.
+      <div>
+        <div>
+          <img className="img-class" src={profilePic} alt="profile pic"></img>
+        </div>
+        <div className="about-part">
+          I am a recent coding bootcamp graduate with a passion for developing
+          scalable web applications and working across the full stack.
+        </div>
       </div>
       <div className="about-part margin-top margin-bottom">
         I focus on writing clean and modular code which is easily maintainable
