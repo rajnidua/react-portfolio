@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faWindowClose } from "@fortawesome/free-solid-svg-icons";
 
 // Here we import the Navbar.css file to grant access to some additional styleNameNames
 import "../styles/Navbar.css";
 
 function Navbar({ currentPage, handlePageChange }) {
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
+
   return (
     <nav className="navbar">
       {/* <div className="max-width"> */}
@@ -13,11 +17,16 @@ function Navbar({ currentPage, handlePageChange }) {
         <a href="https://github.com/rajnidua">R@j|\|;</a>
       </div>
 
-      <ul className="menu">
+      {/* <ul className="menu"> */}
+      <ul className={click ? "menu active" : "menu"}>
         <li>
           <a
             href="#hero"
-            onClick={() => handlePageChange("Hero")}
+            onClick={() => {
+              handlePageChange("Hero");
+
+              closeMobileMenu();
+            }}
             className={currentPage === "Home" ? "nav-link active" : "nav-link"}
           >
             Home
@@ -26,7 +35,10 @@ function Navbar({ currentPage, handlePageChange }) {
         <li>
           <a
             href="#about"
-            onClick={() => handlePageChange("About")}
+            onClick={() => {
+              handlePageChange("About");
+              closeMobileMenu();
+            }}
             className={currentPage === "About" ? "nav-link active" : "nav-link"}
           >
             About
@@ -36,7 +48,10 @@ function Navbar({ currentPage, handlePageChange }) {
         <li>
           <a
             href="#projects"
-            onClick={() => handlePageChange("Projects")}
+            onClick={() => {
+              handlePageChange("Projects");
+              closeMobileMenu();
+            }}
             className={
               currentPage === "Projects" ? "nav-link active" : "nav-link"
             }
@@ -47,7 +62,10 @@ function Navbar({ currentPage, handlePageChange }) {
         <li>
           <a
             href="#contactForm"
-            onClick={() => handlePageChange("ContactForm")}
+            onClick={() => {
+              handlePageChange("ContactForm");
+              closeMobileMenu();
+            }}
             className={
               currentPage === "ContactForm" ? "nav-link active" : "nav-link"
             }
@@ -57,8 +75,17 @@ function Navbar({ currentPage, handlePageChange }) {
         </li>
       </ul>
 
-      <div className="menu-btn">
+      {/*  <div className="menu-btn">
         <FontAwesomeIcon icon={faBars} />
+      </div> */}
+
+      <div className="mobile-menu" onClick={handleClick}>
+        {click ? (
+          <FontAwesomeIcon icon={faWindowClose} className="menu-btn" />
+        ) : (
+          // <MenuIcon className="menu-icon" />
+          <FontAwesomeIcon icon={faBars} className="menu-btn" />
+        )}
       </div>
     </nav>
   );
