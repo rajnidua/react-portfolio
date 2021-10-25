@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import "../../styles/Hero.css";
 import profilePic from "../../images/profile_pic.jpg";
-import Typing from "./Typing";
+//import Typing from "./Typing";
 import GetInTouch from "./GetInTouch";
 import { createTheme, ThemeProvider, Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
+
+import TypeWriterEffect from "react-typewriter-effect";
 
 const theme = createTheme({
   palette: {
@@ -64,19 +66,39 @@ function Hero() {
             <span className="diff-font"> BACK</span> END DEVELOPER
           </div>
 
-          <div className="typing-block">
-            {/* <div>MY SKILLS:</div> */}
+          {/*   <div className="typing-block">
             <div className="typing">
               <Typing />
             </div>
-          </div>
+          </div> */}
 
-          {/*      <a
-            className="touch"
-            href="mailto:rajni.dua14@gmail.com?subject=REGARDING WORK"
-          >
-            GET IN TOUCH
-          </a> */}
+          <TypeWriterEffect
+            textStyle={{
+              fontFamily: "Red Hat Display",
+              color: "#3F3D56",
+              fontWeight: 500,
+              fontSize: "1.5em",
+            }}
+            startDelay={2000}
+            cursorColor="#3F3D56"
+            multiText={[
+              "HTML",
+              "CSS",
+              "BOOTSTRAP",
+              "JAVASCRIPT",
+              "JQUERY",
+              "MYSQL2",
+              "MONGODB",
+              "EXPRESS JS",
+              "NODE JS",
+              "API INTEGRATION",
+              "REACT",
+              "",
+            ]}
+            multiTextDelay={1000}
+            typeSpeed={30}
+            hideCursorAfterText={true}
+          />
 
           <Button
             href="mailto:rajni.dua14@gmail.com?subject=REGARDING WORK"

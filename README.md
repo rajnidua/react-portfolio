@@ -46,8 +46,8 @@ Use:
 
 <FontAwesomeIcon icon={faBars} />
 
-For Typing :
-npm install react-typist --save
+For Typing
+npm i react-typewriter-effect
 
 For gh pages :
 npm i gh-pages
@@ -57,6 +57,18 @@ npm install validator
 
 For color
 npm install @material-ui/core
+
+For including CSS animations
+npm install react-animate-on-scroll --save
+
+Then include animate.css in the project:
+import "animate.css/animate.min.css";
+
+Or by simply including a link to the file hosted by CDNJS:
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
 ```
 
 # Getting Started with Create React App
