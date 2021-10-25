@@ -5,13 +5,14 @@ import profilePic from "../../images/profile_pic.jpg";
 export default function About() {
   return (
     <section className="about">
-      <div>
+      <div className="topSection">
         <div>
           <img className="img-class" src={profilePic} alt="profile pic"></img>
         </div>
-        <div className="about-part">
-          I am a recent coding bootcamp graduate with a passion for developing
-          scalable web applications and working across the full stack.
+        <div className="intro">
+          Hi, My name is Rajni! I am a recent coding bootcamp graduate with a
+          passion for developing scalable web applications and working across
+          the full stack.
         </div>
       </div>
       <div className="about-part margin-top margin-bottom">

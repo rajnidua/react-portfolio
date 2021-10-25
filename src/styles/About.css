@@ -7,6 +7,28 @@
   background-color: #f7f4f4;
 }
 
+.about .topSection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.topSection .intro {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 700px;
+  /* margin: 20px;*/
+  padding: 20px 40px 20px 40px;
+  font-size: 30px;
+}
+
 .about-part {
   display: flex;
   flex-direction: row;
