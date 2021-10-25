@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../../styles/Hero.css";
 import profilePic from "../../images/profile_pic.jpg";
+import meWritingCode2 from "../../images/meWritingCode2.jpeg";
 //import Typing from "./Typing";
 import GetInTouch from "./GetInTouch";
 import { createTheme, ThemeProvider, Button } from "@material-ui/core";
@@ -54,7 +55,12 @@ function Hero() {
     <ThemeProvider theme={theme}>
       <section className="hero">
         <div className="left-section">
-          <img className="img-class" src={profilePic} alt="profile pic"></img>
+          <img
+            className="img-class"
+            src={meWritingCode2}
+            alt="profile pic"
+          ></img>
+          {/* <img className="img-class" src={profilePic} alt="profile pic"></img> */}
         </div>
         <div className="right-section">
           <div className="name">
@@ -77,7 +83,7 @@ function Hero() {
               fontFamily: "Red Hat Display",
               color: "#3F3D56",
               fontWeight: 500,
-              fontSize: "1.5em",
+              fontSize: "1.8em",
             }}
             startDelay={1000}
             cursorColor="#3F3D56"
