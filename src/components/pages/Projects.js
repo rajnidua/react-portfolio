@@ -26,7 +26,7 @@ function Projects({ projectsArray }) {
   return (
     <section className="projects">
       {projectsArray.map((project) => (
-        <Bounce left key={project.id}>
+        <Bounce left key={project.id} className="bounceProject">
           <section className="project-card-section">
             <div className="project-pic">
               <img className="project-img" src={project.image} alt="" />

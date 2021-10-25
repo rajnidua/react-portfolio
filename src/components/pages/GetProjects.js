@@ -41,8 +41,7 @@ const projectsArray = [
     description: ` A full stack web application which looks after your plants by
                 letting you add your plant details and getting you the next
                 watering schedule date for your plant according to the watering
-                schedule that you entered.User can signup/login to the
-                application. This was a group project where I worked in a team
+                schedule that you entered. This was a group project where I worked in a team
                 of three. I was responsible to develop the back-end , so I
                 developed all the get, put and post routes. And also all the
                 fetch functions in Js files.This app is deployed in Heroku.`,

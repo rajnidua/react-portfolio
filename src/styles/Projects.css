@@ -11,22 +11,6 @@
   transition: opacity 0.1s;
 }
 
-/* .project-card-section {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-  max-width: 1400px;
-  min-height: 500px;
-  margin: auto;
-
-  margin-top: 50px;
-  margin-bottom: 50px;
-  background-color: lightgray;
-  border-radius: 20%;
-} */
-
 .project-card-section {
   display: flex;
   flex-direction: row;
@@ -94,7 +78,7 @@
   text-decoration: none;
   background-color: #eeeeee;
   color: #333333;
-  padding: 2px 6px 2px 6px;
+
   border-top: 1px solid #cccccc;
   border-right: 1px solid #333333;
   border-bottom: 1px solid #333333;
@@ -108,9 +92,93 @@
   text-decoration: none;
   background-color: #eeeeee;
   color: #333333;
-  padding: 2px 6px 2px 6px;
+
   border-top: 1px solid #cccccc;
   border-right: 1px solid #333333;
   border-bottom: 1px solid #333333;
   border-left: 1px solid #cccccc;
+}
+
+@media (max-width: 400px) {
+  .project-card-section {
+    flex-direction: column;
+    width: 100%;
+    min-height: 200px;
+    border-radius: 5%;
+  }
+
+  .project-card-section .project-pic .project-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5%;
+  }
+
+  .project-card-section .project-description {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .project-card-section .project-description .project-links {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+
+  .project-card-section .project-description .project-links .repo-link {
+    padding: 0px;
+    margin: 0px;
+  }
+  .project-card-section .project-description .project-links .site-link {
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .project-card-section {
+    flex-direction: column;
+    width: 100%;
+    min-height: 200px;
+    border-radius: 5%;
+  }
+
+  .project-card-section .project-pic .project-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5%;
+  }
+
+  .project-card-section .project-description {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .project-card-section .project-description .project-links {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+
+  .project-card-section .project-description .project-links .repo-link {
+    padding: 0px;
+    margin: 0px;
+  }
+  .project-card-section .project-description .project-links .site-link {
+    padding: 0px;
+    margin: 0px;
+  }
 }
