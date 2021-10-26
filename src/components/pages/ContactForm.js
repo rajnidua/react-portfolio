@@ -68,8 +68,8 @@ function ContactForm() {
           <div className="column left">
             <div className="text">Get in Touch</div>
             <p>
-              Please reach out for new projects related to web designing and
-              Back-end development.
+              Please reach out for new projects related to Front and Back-end
+              development.
             </p>
             <div className="icons">
               <div className="row">
