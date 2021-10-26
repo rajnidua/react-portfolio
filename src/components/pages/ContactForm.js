@@ -48,7 +48,7 @@ function ContactForm() {
   return (
     <section className="contact" id="contact">
       <div className="max-width">
-        {/* <div className="title">Contact me</div> */}
+        <h2 className="title">Contact me</h2>
         <div className="contact-content">
           <div className="column left">
             <div className="text">Get in Touch</div>
@@ -58,7 +58,6 @@ function ContactForm() {
             </p>
             <div className="icons">
               <div className="row">
-                {/* <i className="fas fa-user"></i> */}
                 <div className="icon-display">
                   <FontAwesomeIcon icon={faUser} />
                 </div>
@@ -69,7 +68,6 @@ function ContactForm() {
               </div>
 
               <div className="row">
-                {/* <i className="fas fa-map-marker-alt"></i> */}
                 <div className="icon-display">
                   <FontAwesomeIcon icon={faMapMarkerAlt} />
                 </div>
@@ -80,7 +78,6 @@ function ContactForm() {
               </div>
 
               <div className="row">
-                {/* <i className="fas fa-envelope"></i> */}
                 <div className="icon-display">
                   <FontAwesomeIcon icon={faEnvelope} />
                 </div>
@@ -96,42 +93,16 @@ function ContactForm() {
             <form action="#">
               <div className="fields">
                 <div className="field name">
-                  <input
-                    required
-                    value={firstName}
-                    name="firstName"
-                    onChange={handleInputChange}
-                    type="text"
-                    placeholder="First Name"
-                  />
+                  <input type="text" placeholder="First Name" required />
                 </div>
-
                 <div className="field name">
-                  <input
-                    required
-                    value={lastName}
-                    name="lastName"
-                    onChange={handleInputChange}
-                    type="text"
-                    placeholder="Last Name"
-                  />
+                  <input type="text" placeholder="Last Name" required />
                 </div>
               </div>
 
               <div className="field Email">
-                <div>
-                  <input
-                    onChange={(e) => validateEmail(e)}
-                    type="text"
-                    placeholder="Email"
-                    required
-                  />
-                </div>
-                <div>
-                  <p>{emailError}</p>
-                </div>
+                <input type="text" placeholder="Email" required />
               </div>
-
               <div className="field">
                 <input type="text" placeholder="Subject" required />
               </div>
@@ -145,9 +116,7 @@ function ContactForm() {
                 ></textarea>
               </div>
               <div className="button">
-                <button type="button" onClick={handleFormSubmit}>
-                  Submit
-                </button>
+                <button type="submit">Send message</button>
               </div>
             </form>
           </div>

@@ -1,46 +1,77 @@
-/* contact section styling */
-.contact {
-  background-color: orange;
-  height: 100vh;
-  padding-top: 100px;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
-.max-width .contact-content {
+html {
+  scroll-behavior: smooth;
+}
+
+.max-width {
   max-width: 1300px;
   padding: 0 80px;
   margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
-  flex-wrap: wrap;
+}
+
+section {
+  padding: 100px 0;
+}
+
+.contact {
+  font-family: "Poppins", sans-serif;
 }
 
 .contact .contact-content {
-  /* margin-top: 10px; */
-  border: 2px solid black;
-  padding: 15px 15px 15px 15px;
-  background-color: lightblue;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
-/* .contact .title::after {
+section .title {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+section .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #111;
+  transform: translateX(-50%);
+}
+
+section .title::after {
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  font-size: 20px;
+  color: crimson;
+  padding: 5px;
+  background: #fff;
+  transform: translateX(-50%);
+}
+
+/* contact section styling */
+.contact .title::after {
   content: "get in touch";
-  color: red;
-} */
+}
 
 .contact .contact-content .column {
   width: calc(50% - 30px);
-
-  padding: 20px;
 }
-
-.contact .contact-content .right {
-  border: 5px solid crimson;
-}
-
-/*.contact .contact-content .column {
-  width: calc(50% - 30px);
-}*/
 
 .contact .contact-content .text {
   font-size: 20px;
@@ -52,29 +83,14 @@
   text-align: justify;
 }
 
-.contact .max-width .contact-content .left .icons {
-  /* margin: 10px 0; */
-
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: left;
-  max-width: 500px;
+.contact .contact-content .left .icons {
+  margin: 10px 0;
 }
 
-.contact .max-width .contact-content .left .icons .row {
+.contact .contact-content .row {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  margin: 0;
-  min-height: 80px;
-  /* width: calc(20% - 30px); */
-  max-width: 550px;
-
+  height: 65px;
   align-items: center;
-
-  justify-content: space-between;
 }
 
 .contact .contact-content .row .info {
@@ -84,17 +100,14 @@
 .contact .contact-content .row .icon-display {
   font-size: 25px;
   color: crimson;
-  margin: 0;
 }
 
 .contact .contact-content .info .head {
   font-weight: 500;
-
-  font-size: 20px;
 }
 
 .contact .contact-content .info .sub-title {
-  color: blue;
+  color: #333;
 }
 
 .contact .right form .fields {
@@ -117,8 +130,8 @@
   margin-right: 10px;
 }
 
-.contact .right form .Email {
-  margin-right: 10px;
+.contact .right form .email {
+  margin-left: 10px;
 }
 
 .contact .right form .field input,
@@ -159,4 +172,19 @@
 .contact .right form .button button:hover {
   color: crimson;
   background: none;
+}
+
+/* responsive media query start */
+
+@media (max-width: 947px) {
+  .contact .contact-content .column {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 690px) {
+  .max-width {
+    padding: 0 23px;
+  }
 }

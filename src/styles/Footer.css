@@ -5,9 +5,45 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  padding-top: 15px;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
 }
 
 .icon-display {
   font-size: 25px;
   color: crimson;
+}
+
+/* @media (max-width: 400px) {
+  footer {
+    position: static;
+    bottom: 0px;
+  }
+}
+
+@media (max-width: 650px) {
+  footer {
+    position: static;
+    bottom: 0px;
+    background-color: red;
+    padding-bottom: 1px;
+  }
+} */
+
+@media only screen and (max-width: 767px) {
+  footer {
+    background-color: lightgray;
+    color: #ffffff;
+    font-size: 0.8em;
+    margin-top: 25px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+  }
 }
