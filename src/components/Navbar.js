@@ -47,6 +47,21 @@ function Navbar({ currentPage, handlePageChange }) {
 
         <li>
           <a
+            href="#skills"
+            onClick={() => {
+              handlePageChange("Skills");
+              closeMobileMenu();
+            }}
+            className={
+              currentPage === "Skills" ? "nav-link active" : "nav-link"
+            }
+          >
+            Skills
+          </a>
+        </li>
+
+        <li>
+          <a
             href="#projects"
             onClick={() => {
               handlePageChange("Projects");

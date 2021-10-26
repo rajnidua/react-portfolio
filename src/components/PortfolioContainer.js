@@ -3,9 +3,11 @@ import Navbar from "./Navbar";
 import Hero from "./pages/Hero";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
+import Skills from "./pages/Skills";
 import Footer from "./pages/Footer";
 import ContactForm from "./pages/ContactForm";
 import projectsArray from "./pages/GetProjects";
+import skillsArray from "./pages/GetSkills";
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState("Hero");
@@ -27,6 +29,15 @@ export default function PortfolioContainer() {
       return (
         <div>
           <About />
+          <Footer />
+        </div>
+      );
+    }
+
+    if (currentPage === "Skills") {
+      return (
+        <div>
+          <Skills skillsArray={skillsArray} />
           <Footer />
         </div>
       );

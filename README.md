@@ -46,6 +46,9 @@ Use:
 
 <FontAwesomeIcon icon={faBars} />
 
+For technology icons:
+npm i font-mfizz
+
 For Typing
 npm i react-typewriter-effect
 

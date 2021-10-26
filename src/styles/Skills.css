@@ -1,0 +1,26 @@
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+list-group-skill {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.skill-block {
+  padding: 50px;
+}
