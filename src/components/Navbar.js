@@ -12,9 +12,20 @@ function Navbar({ currentPage, handlePageChange }) {
 
   return (
     <nav className="navbar">
-      {/* <div className="max-width"> */}
-      <div className="logo">
+      {/* <div className="logo">
         <a href="https://github.com/rajnidua">R@j|\|;</a>
+      </div> */}
+      <div className="logo">
+        <a
+          href="#hero"
+          onClick={() => {
+            handlePageChange("Hero");
+
+            closeMobileMenu();
+          }}
+        >
+          R@j|\|;
+        </a>
       </div>
 
       {/* <ul className="menu"> */}
