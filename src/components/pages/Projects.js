@@ -44,7 +44,7 @@ function Projects({ projectsArray }) {
               <div className="project-links">
                 <div className="repo-link">
                   <Button
-                    href={project.github}
+                    href={project.githubLink}
                     color="primary"
                     variant="contained"
                   >
@@ -53,7 +53,7 @@ function Projects({ projectsArray }) {
                 </div>
                 <div className="site-link">
                   <Button
-                    href={project.app}
+                    href={project.appLink}
                     color="primary"
                     variant="contained"
                   >
