@@ -25,6 +25,10 @@ git remote add origin https://github.com/rajnidua{change it to your user name}/r
 git push -u origin main
 ```
 
+#Working App
+
+![](./src/images/working_app.gif)
+
 # Installations
 
 ```md
