@@ -13,12 +13,12 @@ function ContactForm() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
-  const [subject, setSugject] = useState("");
+  const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
   const [emailError, setEmailError] = useState("");
   const validateEmail = (e) => {
-    var email = e.target.value;
+    setEmail(e.target.value);
 
     if (validator.isEmail(email)) {
       setEmailError("Valid Email :)");
@@ -27,12 +27,24 @@ function ContactForm() {
     }
   };
 
-  const handleInputChange = (e) => {
-    // Getting the value and name of the input which triggered the change
-    const { name, value } = e.target;
+  const removeValidationMsg = (e) => {
+    setEmailError("");
+  };
 
-    // Ternary statement that will call either setFirstName or setLastName based on what field the user is typing in
-    return name === "firstName" ? setFirstName(value) : setLastName(value);
+  const handleChangeFirst = (e) => {
+    setFirstName(e.target.value);
+  };
+
+  const handleChangeLast = (e) => {
+    setLastName(e.target.value);
+  };
+
+  const handleChangeSubject = (e) => {
+    setSubject(e.target.value);
+  };
+
+  const handleChangeMessage = (e) => {
+    setMessage(e.target.value);
   };
 
   const handleFormSubmit = (e) => {
@@ -43,6 +55,9 @@ function ContactForm() {
     alert(`Hello ${firstName} ${lastName}`);
     setFirstName("");
     setLastName("");
+    setEmail("");
+    setSubject("");
+    setMessage("");
   };
 
   return (
@@ -90,21 +105,46 @@ function ContactForm() {
           </div>
           <div className="column right">
             <div className="text">Message me</div>
-            <form action="#">
+            <form onSubmit={handleFormSubmit}>
               <div className="fields">
                 <div className="field name">
-                  <input type="text" placeholder="First Name" required />
+                  <input
+                    type="text"
+                    placeholder="First Name"
+                    value={firstName}
+                    onChange={handleChangeFirst}
+                    required
+                  />
                 </div>
                 <div className="field name">
-                  <input type="text" placeholder="Last Name" required />
+                  <input
+                    type="text"
+                    placeholder="Last Name"
+                    value={lastName}
+                    onChange={handleChangeLast}
+                    required
+                  />
                 </div>
               </div>
 
               <div className="field Email">
-                <input type="text" placeholder="Email" required />
+                <input
+                  type="text"
+                  placeholder="Email"
+                  value={email}
+                  onChange={validateEmail}
+                  onBlur={removeValidationMsg}
+                  required
+                />
               </div>
               <div className="field">
-                <input type="text" placeholder="Subject" required />
+                <input
+                  type="text"
+                  placeholder="Subject"
+                  value={subject}
+                  onChange={handleChangeSubject}
+                  required
+                />
               </div>
 
               <div className="field textarea">
@@ -112,12 +152,15 @@ function ContactForm() {
                   cols="30"
                   rows="10"
                   placeholder="Describe Project.."
+                  value={message}
+                  onChange={handleChangeMessage}
                   required
                 ></textarea>
               </div>
               <div className="button">
                 <button type="submit">Send message</button>
               </div>
+              <div>{emailError}</div>
             </form>
           </div>
         </div>
