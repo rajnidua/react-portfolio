@@ -34,7 +34,7 @@ export default function Footer() {
         {/* <a href="https://github.com/rajnidua">
           <FontAwesomeIcon icon={faGithub} />
         </a> */}
-        <Button href="https://www.linkedin.com/in/rajnidua/">
+        <Button href="https://github.com/rajnidua">
           <FontAwesomeIcon icon={faGithub} />
         </Button>
       </div>
@@ -43,7 +43,7 @@ export default function Footer() {
           <FontAwesomeIcon icon={faEnvelope} />
         </a> */}
 
-        <Button href="https://www.linkedin.com/in/rajnidua/">
+        <Button href="mailto:rajni.dua14@gmail.com?subject=REGARDING WORK">
           <FontAwesomeIcon icon={faEnvelope} />
         </Button>
       </div>
@@ -51,7 +51,7 @@ export default function Footer() {
         {/* <a href={Rajni_Resume} download>
           <FontAwesomeIcon icon={faFilePdf} />
         </a> */}
-        <Button href="https://www.linkedin.com/in/rajnidua/">
+        <Button href="{Rajni_Resume} download">
           <FontAwesomeIcon icon={faFilePdf} />
         </Button>
       </div>

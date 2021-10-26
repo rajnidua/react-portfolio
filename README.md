@@ -29,6 +29,9 @@ npm i bootstrap dotenv axios --save
 To use CSS-in-JS, install the styles component
 npm install styled-components --save
 
+Deploy to github:
+npm run deploy
+
 For font awesome icons:
 Install:
 

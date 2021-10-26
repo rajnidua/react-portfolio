@@ -57,7 +57,7 @@ function Projects({ projectsArray }) {
                     color="primary"
                     variant="contained"
                   >
-                    Demo Video
+                    Live App
                   </Button>
                 </div>
               </div>
