@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.5a6b2321.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.1acf2c17.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.1acf2c17.chunk.js.map",
+    "main.js": "/react-portfolio/static/js/main.1a5fc58f.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.1a5fc58f.chunk.js.map",
     "runtime-main.js": "/react-portfolio/static/js/runtime-main.7530632e.js",
     "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.7530632e.js.map",
     "static/css/2.0a9ec390.chunk.css": "/react-portfolio/static/css/2.0a9ec390.chunk.css",
@@ -15,7 +15,8 @@
     "static/media/ECommerce_Back_End.fdf0c4e7.png": "/react-portfolio/static/media/ECommerce_Back_End.fdf0c4e7.png",
     "static/media/EmployeeTrackingSystem1.29a139d4.png": "/react-portfolio/static/media/EmployeeTrackingSystem1.29a139d4.png",
     "static/media/PlantPersonalAssistant.3f70bea7.png": "/react-portfolio/static/media/PlantPersonalAssistant.3f70bea7.png",
-    "static/media/Rajni_Resume.41c31ef4.pdf": "/react-portfolio/static/media/Rajni_Resume.41c31ef4.pdf",
+    "static/media/Rajni_Resume.10bd22f7.pdf": "/react-portfolio/static/media/Rajni_Resume.10bd22f7.pdf",
+    "static/media/TheCoachPlus_Screenshot.8201927d.png": "/react-portfolio/static/media/TheCoachPlus_Screenshot.8201927d.png",
     "static/media/TheTechBlog.7098e40a.png": "/react-portfolio/static/media/TheTechBlog.7098e40a.png",
     "static/media/meWritingCode2.463a8bc9.jpeg": "/react-portfolio/static/media/meWritingCode2.463a8bc9.jpeg",
     "static/media/profile_pic.5a080867.jpg": "/react-portfolio/static/media/profile_pic.5a080867.jpg",
@@ -27,6 +28,6 @@
     "static/css/2.0a9ec390.chunk.css",
     "static/js/2.707ac0d1.chunk.js",
     "static/css/main.5a6b2321.chunk.css",
-    "static/js/main.1acf2c17.chunk.js"
+    "static/js/main.1a5fc58f.chunk.js"
   ]
 }
