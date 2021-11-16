@@ -1,5 +1,4 @@
 import React from "react";
-import Rajni_Resume from "../../images/Rajni_Resume.pdf";
 
 import "../../styles/Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
