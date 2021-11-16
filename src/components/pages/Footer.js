@@ -51,7 +51,7 @@ export default function Footer() {
         {/* <a href={Rajni_Resume} download>
           <FontAwesomeIcon icon={faFilePdf} />
         </a> */}
-        <Button href="{Rajni_Resume} download">
+        <Button href="../../images/Rajni_Resume.pdf">
           <FontAwesomeIcon icon={faFilePdf} />
         </Button>
       </div>
