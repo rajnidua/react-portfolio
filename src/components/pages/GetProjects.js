@@ -5,10 +5,21 @@ import TheTechBlog from "../../images/TheTechBlog.png";
 import weatherDashboard from "../../images/weather_dashboard.jpeg";
 import workoutTrackerGraph from "../../images/workoutTrackerGraph.png";
 import eCommerceBackEnd from "../../images/ECommerce_Back_End.png";
+import theCoachPlus from "../../images/TheCoachPlus_Screenshot.png";
 
 const projectsArray = [
   {
     id: "1",
+    image: theCoachPlus,
+    title: "TheCoach+",
+    description: `TheCoach+ aims to provides a digital platform to all those people who have skills to train others in any kind of sport that exists but don’t have a medium to reach their potential students. 
+On the Other Side, it helps students to find the best suited coach.
+`,
+    githubLink: "https://github.com/rajnidua/the-coach-plus",
+    appLink: "https://boiling-garden-36543.herokuapp.com/",
+  },
+  {
+    id: "2",
     image: EmployeeTrackingSystem1,
     title: "Employee Tracking System",
     description: `A command-line application to manage a company's employee
@@ -22,7 +33,7 @@ const projectsArray = [
       "https://drive.google.com/file/d/14zGVOiTEuxwe6KwTaHE8a6QNt5u8dFr9/view?usp=sharing",
   },
   {
-    id: "2",
+    id: "3",
     image: TheTechBlog,
     title: "The Tech Blog",
     description: `A CMS-style blog site similar to a Wordpress site, where
@@ -35,7 +46,7 @@ const projectsArray = [
     appLink: "https://tech-blog-rajni.herokuapp.com",
   },
   {
-    id: "3",
+    id: "4",
     image: PlantPersonalAssistant,
     title: "Plant Personal Assistant",
     description: ` A full stack web application which looks after your plants by
@@ -49,7 +60,7 @@ const projectsArray = [
     appLink: "https://project-2-your-plant-house.herokuapp.com",
   },
   {
-    id: "4",
+    id: "5",
     image: weatherDashboard,
     title: "Weather Dashboard",
     description: `Dashboard for getting current and future weather conditions
@@ -62,7 +73,7 @@ const projectsArray = [
     appLink: "https://rajnidua.github.io/weather-dashboard/",
   },
   {
-    id: "5",
+    id: "6",
     image: workoutTrackerGraph,
     title: "Workout Tracker",
     description: `Use this app to view, create and track daily workouts. You can log multiple exercises in a workout on a given day. You would also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, you would be able to track the distance traveled.`,
@@ -70,7 +81,7 @@ const projectsArray = [
     appLink: "https://infinite-ravine-72963.herokuapp.com/",
   },
   {
-    id: "6",
+    id: "7",
     image: eCommerceBackEnd,
     title: "ECommerce Back End",
     description: `Building the back end for an e-commerce site by configuring a working Express.js API to use Sequelize to interact with a MySQL database. Please visit the insomnia link from the repo of the app to see how routes are set up for this app.`,
