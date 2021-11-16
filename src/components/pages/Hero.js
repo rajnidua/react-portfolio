@@ -88,6 +88,10 @@ function Hero() {
             startDelay={1000}
             cursorColor="#3F3D56"
             multiText={[
+              "GraphQL",
+              "React",
+              "Mongoose",
+              "API INTEGRATION",
               "HTML",
               "CSS",
               "BOOTSTRAP",
@@ -97,8 +101,7 @@ function Hero() {
               "MONGODB",
               "EXPRESS JS",
               "NODE JS",
-              "API INTEGRATION",
-              "REACT",
+              "Heroku",
               "",
             ]}
             multiTextDelay={1000}
