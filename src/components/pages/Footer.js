@@ -1,4 +1,5 @@
 import React from "react";
+import Rajni_Resume from "../../images/Rajni_Resume.pdf";
 
 import "../../styles/Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -51,7 +52,8 @@ export default function Footer() {
         {/* <a href={Rajni_Resume} download>
           <FontAwesomeIcon icon={faFilePdf} />
         </a> */}
-        <Button href="../../images/Rajni_Resume.pdf">
+
+        <Button href={Rajni_Resume} download>
           <FontAwesomeIcon icon={faFilePdf} />
         </Button>
       </div>
