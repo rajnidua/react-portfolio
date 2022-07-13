@@ -34,6 +34,8 @@ export default function Typing() {
           <Typist.Backspace count={7} delay={800} />
           <span>REACT</span>
           <Typist.Backspace count={5} delay={800} />
+          <span>GO</span>
+          <Typist.Backspace count={5} delay={800} />
         </Typist>
       ) : (
         ""
