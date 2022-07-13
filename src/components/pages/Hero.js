@@ -90,11 +90,12 @@ function Hero() {
             multiText={[
               "GraphQL",
               "React",
+              "Styled Components",
               "Mongoose",
               "API INTEGRATION",
               "HTML",
               "CSS",
-              "BOOTSTRAP",
+              "GitHub",
               "JAVASCRIPT",
               "JQUERY",
               "MYSQL2",
@@ -102,7 +103,9 @@ function Hero() {
               "EXPRESS JS",
               "NODE JS",
               "Heroku",
-              "",
+              "GO",
+              "Postman",
+              "Testing",
             ]}
             multiTextDelay={1000}
             typeSpeed={30}

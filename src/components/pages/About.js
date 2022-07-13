@@ -10,17 +10,20 @@ export default function About() {
           <img className="img-class" src={profilePic} alt="profile pic"></img>
         </div>
         <div className="intro">
-          Hi, My name is Rajni! I am a recent coding bootcamp graduate with a
-          passion for developing scalable web applications and working across
-          the full stack.
+        Hi, My name is Rajni! I am a self-driven, customer-focused and
+          results-oriented Full Stack Web Developer with a passion for delivery
+          and development of applications taking a mobile-first and customer
+          centric approach. Experienced in all stages of software development,
+          skilful in a range of web (front-end and back-end) development
+          technologies and demonstrated success working in a high-paced
+          environment I bring forth expertise in the design, development,
+          testing, implementation, and maintenance of web systems.
         </div>
       </div>
       <div className="about-part margin-top margin-bottom">
-        I focus on writing clean and modular code which is easily maintainable
-        and scalable. My priority lies in taking a mobile first approach using
-        functionalities like flexbox, grid and bootstrap and of course media
-        queries.I make sure that the biggest impact features are worked on
-        first.
+         I like to work in challenging roles and focus on writing clean and
+        modular code which is easily maintainable and scalable. My priority lies
+        in taking a mobile first approach.
       </div>
       <div className="about-part margin-top margin-bottom">
         I have built fully functional web applications by integrating third
@@ -30,7 +33,7 @@ export default function About() {
         paradigm and much more ....
       </div>
       <div className="about-part margin-top margin-bottom">
-        These days I am improvising my skills in REACT
+        These days I am trying to improve my skills in React and GO.
       </div>
     </section>
   );
