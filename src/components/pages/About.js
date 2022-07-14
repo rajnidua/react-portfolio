@@ -21,9 +21,10 @@ export default function About() {
         </div>
       </div>
       <div className="about-part margin-top margin-bottom">
-        I like to work in challenging roles and focus on writing clean and
-        modular code which is easily maintainable and scalable. My priority lies
-        in taking a mobile first approach.
+        I like to work in challenging roles and focus on writing clean and I
+        like to work in challenging roles and focus on writing clean and modular
+        code which is easily maintainable and scalable. My priority lies in
+        taking a mobile first approach.
       </div>
       <div className="about-part margin-top margin-bottom">
         I have built fully functional web applications by integrating third
